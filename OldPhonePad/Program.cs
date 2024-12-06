@@ -1,12 +1,16 @@
 ﻿using System;
 
-namespace OldPhonePad
+public class Program
 {
-    public class OldPhoneKeyPad
+    public static void Main()
     {
-        public static string OldPhonePad(string input) {
+        Console.WriteLine(OldKeypadPhone.OldPadPhone("33#"));
+        Console.WriteLine(OldKeypadPhone.OldPadPhone("227*#"));
+        Console.WriteLine(OldKeypadPhone.OldPadPhone("4433555 555666#"));
+        Console.WriteLine(OldKeypadPhone.OldPadPhone("8 88777444666* 664#"));
 
-            return "1asdf";
-        }
+        string input = Console.ReadLine();
+
+        string result = OldKeypadPhone.OldPadPhone(input);
     }
 }
